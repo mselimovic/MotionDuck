@@ -1,0 +1,158 @@
+:root {
+--primary-color:rgba(93, 178, 218, 0.75);
+--overlay-color: rgba(24, 39, 51, 0.85);
+--menu-speed:0.75s;
+--page-1-color:skyblue;
+--page-2-color:rgb(33, 49, 62);
+--page-3-color:rgb(7, 42, 54) ;
+--page-4-color:rgb(27, 25, 36);
+--animate-speed:1s;
+--clr-bg: rgb(32, 44, 49);
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+font-family: Arial, Helvetica, sans-serif;
+line-height: 1.4;
+color: white;
+margin: 0;
+padding: 0;
+overflow: hidden;
+}
+
+/* page colors */
+#page-1{
+  background: var(--clr-bg)
+  
+}
+#page-2{
+  background: var(--page-2-color);
+}
+#page-3{
+  background: var(--page-3-color);
+}
+#page-4{
+  background: var(--page-4-color);
+}
+.page {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 4rem;
+}
+
+.page h1 {
+  font-size: 3rem;
+  line-height: 1;
+  margin: 0.5rem;
+  
+
+}
+
+.page p {
+  font-size: 1.3rem;
+  padding: 1rem;
+
+}
+/*  
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #f4f4f4;
+  color: #333;
+  text-decoration: none;
+  border: none;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  transition: all 0.4s ease-in;
+  border-radius: 10px;
+  font-family: 'Roboto Flex', sans-serif;
+
+}
+.btn:hover, .btn-dark {
+  background: #333;
+  color: #fff;
+  
+} 
+.btn-dark:hover {
+  background: #fff;
+  color: #333;
+}
+*/
+
+.box {
+  display: flex;
+  position: relative;
+  height: 250px;
+  width: 250px;
+  animation: kutija ;
+  animation-duration: 5s;
+  animation-fill-mode: none;
+  top: 0;
+  left: 0; 
+  background: transparent;
+  border: #fff solid;
+  margin: 2.4rem;
+  box-sizing: border-box;
+  
+  
+  
+}
+.box-2 {
+  position: relative;
+  top: -290px;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+}
+.box-2 img{
+  
+  height: 250px;
+  width: 250px;
+  animation: patka ; 
+  animation-duration: 5s;
+  animation-fill-mode: none;
+  justify-content: center;
+  float: center;
+   
+}
+
+@keyframes kutija {
+  
+  0% {
+    transform: rotate(0deg);
+      left: -1200px;
+    
+    
+  }
+
+  100% {
+    transform: rotate(360deg); 
+    left: 0px;  
+   
+  }
+ 
+}
+@keyframes patka {
+  from {
+    transform: translateX(-1200px);
+   
+  }
+
+  to{
+    transform: translateX(0px);
+    
+  }
+}
+/* page animation 
+#page-1 h1 {
+
+}
+*/
+

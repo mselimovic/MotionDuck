@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="button.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto+Flex:opsz,wght@8..144,200&display=swap"  rel="stylesheet">
+  <script src="https://kit.fontawesome.com/0809b447da.js" crossorigin="anonymous"></script>
+  <title>My Presentation</title>
+</head>
+<body>
+
+ 
+  <!-- page 1 -->
+  <section id="page-1" class="page">
+      <!-- Menu -->
+   <div class="menu-wrap">
+    <input type="checkbox" class="toggler">
+    <div class="hamburger-menu"><div></div></div>
+    <div class="menu">
+      <div>
+        <div>
+          <ul>
+            <li><a href="#page-1">Page 1</a></li>
+            <li><a href="#page-2">Page 2</a></li>
+            <li><a href="#page-3">Page 3</a></li>
+            <li><a href="#page-4">Page 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+   </div>
+    <h1>SugarHill</h1>
+    <p>Motion graphics is animation, but with text as a major component. Essentially, its animated graphic design. Motion graphics are a way to communicate with the viewer, and add depth to the story. Together with music and effective copy, they can give us a message</p>
+    <div class="box"> </div>
+    <div class="box-2">  
+      <img src="/images/pngwing.com2.png" alt="">
+      <div>
+        <a href="#page-2" class="btn">
+          Next Page <i class="fas fa-arrow-circle-down"></i>
+        </a>
+      </div>
+     </div>
+   
+  </section>
+  <!-- page 2 -->
+  <section id="page-2" class="page">
+    <h1>Page 2</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dicta voluptatum, modi beatae quidem, illum ratione maiores est, esse corrupti obcaecati unde minus culpa provident recusandae praesentium dolores? Repudiandae, saepe!</p>
+    <div>
+      <a href="#page-1" class="btn btn-dark">
+        Previous Page <i class="fas fa-arrow-circle-up"></i>
+      </a>
+      <a href="#page-3" class="btn">
+        Next Page <i class="fas fa-arrow-circle-down"></i>
+      </a>
+    </div>
+  </section>
+    <!-- page 3 -->
+    <section id="page-3" class="page">
+      <h1>Page 3</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, aliquid! Error non fugiat officiis laborum ab impedit, dolorem commodi consequatur dolor aliquid distinctio neque facere libero repellat deleniti ullam velit vero reiciendis et sed iure debitis corrupti! Quibusdam, animi fuga.</p>
+      <div>
+        <a href="#page-2" class="btn btn-dark">
+          Previous Page <i class="fas fa-arrow-circle-up"></i>
+        </a>
+        <a href="#page-4" class="btn">
+          Next Page <i class="fas fa-arrow-circle-down"></i>
+        </a>
+      </div>
+    </section>
+      <!-- page 4 -->
+      <section id="page-4" class="page">
+        <h1>Page 4</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, saepe necessitatibus a iusto asperiores sapiente soluta odit non! Doloribus quidem natus hic culpa voluptate quam, laboriosam modi iure accusamus sint earum? Porro, labore! Assumenda ipsa blanditiis vero autem, consequatur velit, quae minima tempora impedit, eligendi atque distinctio sapiente? Provident quo quas maxime a soluta facilis maiores, consequatur earum facere. Iure!</p>
+        <div>
+          <a href="#page-3" class="btn">
+            Previous Page <i class="fas fa-arrow-circle-up"></i>
+          </a>
+        </div>
+      </section>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+      <script>
+        // smooth scrolling
+        $('.btn').on('click', function(event) {
+         if (this.hash !=='') {
+          event.preventDefault();
+          const hash = this.hash;
+          $('html, body').animate (
+            {
+              scrollTop: $(hash).offset().top
+            },
+            400
+          );
+         }
+        });
+      </script>
+    
+</body>
+</html>
