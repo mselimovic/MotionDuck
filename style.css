@@ -87,20 +87,21 @@ overflow: hidden;
 */
 
 .box {
-  display: flex;
+  display: flex; 
+  flex-direction: row;
   position: relative;
   height: 250px;
   width: 250px;
-  animation: kutija ;
+  animation: Tbox ;
   animation-duration: 5s;
   animation-fill-mode: none;
   top: 0;
-  left: 0; 
-  background: transparent;
+  left: 0;  */
+  background: transparent; 
   border: #fff solid;
   margin: 2.4rem;
   box-sizing: border-box;
-  
+  padding: 120px;
   
   
 }
@@ -115,7 +116,7 @@ overflow: hidden;
   
   height: 250px;
   width: 250px;
-  animation: patka ; 
+  animation: duck ; 
   animation-duration: 5s;
   animation-fill-mode: none;
   justify-content: center;
@@ -123,7 +124,7 @@ overflow: hidden;
    
 }
 
-@keyframes kutija {
+@keyframes Tbox {
   
   0% {
     transform: rotate(0deg);
@@ -139,7 +140,7 @@ overflow: hidden;
   }
  
 }
-@keyframes patka {
+@keyframes duck {
   from {
     transform: translateX(-1200px);
    
@@ -150,6 +151,18 @@ overflow: hidden;
     
   }
 }
+
+/* Mobile */
+/* @media(max-height:880px){
+  .box{
+    height: 250px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  }
+} */
 /* page animation 
 #page-1 h1 {
 
